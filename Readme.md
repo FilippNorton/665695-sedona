@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Filip Mochalov](https://up.htmlacademy.ru/htmlcss/21/user/665695).
-* Наставник: `Макс Пушкарев`.
+* Наставник: [Андрей Фидельман](https://htmlacademy.ru/profile/id773165)
 
 ---
 
