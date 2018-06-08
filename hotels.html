@@ -21,7 +21,50 @@
 		<main class="container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр гостиниц</h2>
-				<!-- Здесь будет форма -->
+				<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+		         	<fieldset>
+		            	<legend>Инфраструктура:</legend>
+		            	<ul>
+		              		<li class="filter-item">
+		                		<input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+		                		<label for="swimming-pool"> Бассейн</label>
+		              		</li>
+		              		<li class="filter-item">
+		                  		<input type="checkbox" name="parking" id="parking">
+		                  		<label for="parking">Парковка</label>
+		              		</li>
+		              		<li class="filter-item">
+		                  		<input type="checkbox" name="internet" id="internet">
+		                  		<label for="internet">Wi-Fi</label>
+		              		</li>
+		           		</ul>
+		          	</fieldset>
+		          	<fieldset>
+		            	<legend>Тип жилья:</legend>
+		            	<ul>
+	              			<li class="filter-item">
+	                			<input type="checkbox" name="hotel" id="hotel" checked>
+	                			<label for="hotel">Гостиница</label>
+	              			</li>
+		             		<li class="filter-item">
+		                  		<input type="checkbox" name="motel" id="motel" checked>
+		                  		<label for="motel">Мотель</label>
+		              		</li>
+		              		<li class="filter-item">
+		                  		<input type="checkbox" name="appartament" id="appartament" checked>
+		                  		<label for="appartament">Апартаменты</label>
+		              		</li>
+		            	</ul>
+		          	</fieldset>
+		         	<fieldset>
+		            	<legend>Стоимость жилья в сутки (р):</legend>
+		           		<label for="min-price">От</label>
+		            	<input type="number" name="min-price" id="min-price" placeholder="0" min="0">
+		            	<label for="max-price">До</label>
+		            	<input type="number" name="max-price" id="max-price" placeholder="3000" min="0">
+		          	</fieldset>
+		          	<input type="submit" value="Показать">
+		        </form>
 			</section>
 			<section class="catalog">
 				<header class="catalog-header">

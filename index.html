@@ -19,9 +19,8 @@
 			</nav>
 		</header>
 		<main class="container">
-			<h1 class="visuallu-hidden">Сайт «Седона»</h1>
+			<h1 class="visually-hidden">Сайт «Седона»</h1>
 			<header class="welcome-message">
-				
 				<img src="img/welcome-message.png" alt="Welcome-message" width="458" height="352">
 			</header>
 			<article class="features">
@@ -88,9 +87,31 @@
 						<h3>Заинтересовались?</h3>
 						<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</li>
-          			<li><a class="btn" href="#">Поиск гостиницы в седоне</a></li>
+          			<li><a class="btn" href="hotels.html">Поиск гостиницы в седоне</a></li>
 				</ul>
-				<!-- Здесь будет форма -->
+				<form class="hotels-search-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="hotels-search-form-item">
+						<label for="date-check-in">Дата заезда:</label>
+						<input type="date" name="date-check-in" id="date-check-in">
+					</p>
+					<p class="hotels-search-form-item">
+						<label for="date-check-out">Дата выезда:</label>
+						<input type="date" name="date-check-out" id="date-check-out">
+					</p>
+					<p class="hotels-search-form-item">
+						<label for="number-of-addult">Взрослые:</label>
+						<button type="button">Уменьшить</button>
+						<input type="number" min="0" max="10" name="number-of-addult" id="number-of-addult">
+						<button type="button">Увеличить</button>
+						<label for="number-of-children">Дети:</label>
+						<button type="button">Уменьшить</button>
+						<input type="number" min="0" max="10" name="number-of-children" id="number-of-children">
+						<button type="button">Увеличить</button>
+					</p>
+					<p class="hotels-search-form-item">
+						<input type="submit" value="Найти">
+					</p>
+				</form>
 			</div>
 			<figure class="map-of-sedona">
 				<img src="img/map of sedona.png" alt="Карта Седоны" width="1280" height="747">
